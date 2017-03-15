@@ -1,0 +1,33 @@
+NOTA! Acest proiect a fost realizat inainte de a incepe primul an universitar, in prima jumatate a anului 2015, cand nu 
+aveam cunostinte legate de sabloane de proiectare si nici chiar de OOP!	
+
+ATENTIE!!! 	Programul functioneaza DOAR pe rezolutia 1280*1024, nefiind testat sau facut pentru alte 
+		  rezolutii.
+			Daca apar erori precum: Send/Don't Send, ferestre care clipesc va rog sa incercati pe alt 
+		  sistem. Erorile sunt cauzate de drivere lipsa/nesuportate pentru placa audio sau video.
+			
+
+	Totul este legat relativ, astfel incat folderul poate fi copiat oriunde pentru a fi modificat.
+
+	Pentru a deschide fisierul sursa, NU DESCHIDETI FISIERUL MAIN.CPP, CI PROIECTUL .CBP!
+Proiectul este legat de librarii si headere ce nu pot fi accesate direct din sursa.
+	
+	Dupa compilare (proiectul vine deja compilat), nu executati fisierul .exe din Code::Blocks, ci din folderul 
+bin/debug/binary test.exe . Executarea din CB va produce erori de legare la fisierele dependente (imagini si
+fonturi), din cauza schimbarii adresei din care este executat (nu in bin/debug, unde sunt fisierele dependente, ci 
+in folderul de baza, in care se afla proiectul).
+
+	Navigarea in meniu se face cu sagetile(sus-jos pentru trecerea de la o optiune la alta, stanga-dreapta DOAR
+in meniul SETTINGS, butonul FFT SIZE, pentru micsorarea/marirea bufferului FFT) si cu tasta Enter pentru executare 
+sau pentru modificarea unei setari. Tasta ESC va inchide meniul.
+
+	Comenzile in fereastra de analiza sunt:	Space: Pauza/Redare
+						Esc  : Iesire
+	La ajungerea la finalul fisierului ferestra va ramane deschisa pana la apasarea tastei ESC.
+
+	In cazul iesirii fortate din fereastra de analiza din cauza intarzierii imaginii fata de audio, inchideti 
+toate programele care solicita procesorul si asigurati-va ca procesorul are o frecventa de cel putin 2GHz.
+
+	Fisierele audio suportate sunt: WAV PCM 16-bit, mono sau stereo, sample rate >= 44100
+
+	Dupa terminarea executarii programului, asigurati-va ca consola este inchisa!
